@@ -1,0 +1,208 @@
+body,
+html {
+  height: 100%;
+  width: auto !important;
+  overflow-x: hidden !important; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans","Helvetica",Helvetica,Arial,sans-serif;
+  font-weight: 400; }
+
+/*Adds weight and fixes spacing for h4*/
+h4 {
+  font-weight: 600;
+  letter-spacing: -.3px;
+  line-height: 1.3em; }
+
+/*Sets the width of the page*/
+.container {
+  max-width: 960px;
+  width: 100%; }
+
+/*Makes the paragraph size a little bigger*/
+body p {
+  font-size: 16px; }
+
+h5 {
+  line-height: 1.3em; }
+
+a {
+  color: #007e1a; }
+  a :hover {
+    color: #000000;
+    text-decoration: none; }
+
+hr {
+  border-color: #e3e3e3; }
+
+/*Nav bar is slightly transparent*/
+.navbar {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  /*Logo in the top left corner styling, in the nav section*/ }
+  .navbar img {
+    height: 1.3em; }
+
+/*Sets the background image, makes it stretch to the edges*/
+.jumbotron {
+  background: url(../img/bgsmall.jpg) no-repeat center bottom fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent; }
+
+/*Dropshadow on the svg logo*/
+#dropshadow {
+  -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5)); }
+
+/*Spaces the logo and title in the image, adds padding*/
+.intro-message {
+  position: relative;
+  padding-top: 11em;
+  padding-bottom: 7em;
+  margin: 0 auto;
+  text-align: center;
+  color: #f8f8f8;
+  /*Sizes the logo*/ }
+  .intro-message li {
+    list-style-type: none; }
+  .intro-message h3 {
+    font-weight: normal;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px #3e3e3e; }
+  .intro-message img {
+    max-width: 30em; }
+
+.intro-divider {
+  width: 35%;
+  border-top: 1px solid #f8f8f8;
+  box-shadow: 1px 1px 4px #3e3e3e; }
+  .intro-divider.col-xs-12 {
+    width: 70%;
+    border-top: 1px solid #f8f8f8;
+    box-shadow: 1px 1px 4px #3e3e3e; }
+
+/*Button styling*/
+.btn {
+  background-color: #007e1a;
+  color: #f8f8f8;
+  border: none;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px; }
+  .btn:hover {
+    background-color: #fff;
+    color: #000000;
+    border: none; }
+
+/*Changes size of three points area*/
+.threepoints {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 4em;
+  /*Sizes the images, controls margin*/ }
+  .threepoints img {
+    width: 30%;
+    margin-bottom: .5em;
+    margin-right: 2em;
+    padding-left: 2em; }
+
+/*Adds space below a row */
+.row {
+  padding-bottom: 2em;
+  padding-top: 2em; }
+
+/*Adds space above and below the hr element in this code*/
+.divider {
+  width: 100%;
+  margin-top: 4em;
+  margin-bottom: 0em; }
+
+/*Adds the design behind the middle quote, also sets height*/
+#quote {
+  padding: 10em 2em 12em 0;
+  margin-bottom: 2em;
+  background: #efefef url(../img/circlebg.svg) no-repeat center center;
+  background-size: cover; }
+
+/*contact info styles*/
+.profilepic img {
+  width: 100%; }
+
+.smallcaps {
+  font-variant: small-caps; }
+
+/*Sets spacing for consultation button*/
+#consultation {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3em;
+  /*makes there no shadow around button*/
+  /*Deletes the bullet point from the left of the button*/ }
+  #consultation.btn {
+    box-shadow: none; }
+  #consultation li {
+    list-style-type: none; }
+
+/*formats call to action button at bottom*/
+#calltoaction {
+  background-color: #318333;
+  padding: 4em 0 5em 0;
+  margin: 0em 0 0 0;
+  color: #fff;
+  background: url(../img/calltoactionbg.svg) repeat-x center center; }
+  #calltoaction .btn {
+    background-color: #fff;
+    color: #000;
+    margin-left: -3em; }
+    #calltoaction .btn:hover {
+      background-color: #000;
+      color: #fff; }
+
+/*styles the footer*/
+#footer {
+  background-color: #f8f8f8;
+  padding: 2em 0 4em 0; }
+  #footer a:hover {
+    color: #000; }
+
+#vertdivide {
+  position: relative;
+  left: 3em;
+  top: .5em;
+  border-left: 1px solid #3e3e3e;
+  height: 8em; }
+
+/*Makes the form say "loading" before the form pops up from google*/
+#loading {
+  position: absolute;
+  z-index: -100; }
+
+.broker-check {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  margin-top: 4em; }
+
+@media (max-width: 767px) {
+  .threepoints {
+    text-align: left; }
+    .threepoints img {
+      float: left;
+      padding-top: 1em;
+      padding-right: 0;
+      padding-bottom: 3em;
+      max-width: 28%; } }

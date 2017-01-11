@@ -1,0 +1,6 @@
+# robotstxt.org
+
+SITEMAP: http://clientfirstadvice.com/sitemap.txt
+
+User-agent: *
+Disallow:
