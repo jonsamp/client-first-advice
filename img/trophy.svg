@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="392.7 298.3 192 188.7" enable-background="new 392.7 298.3 192 188.7" xml:space="preserve">
-<g>
-	<path fill="none" stroke="#767879" stroke-width="4" stroke-miterlimit="10" d="M423.9,301.9h128c0,0,3.8,131.8-63.3,131.8
-		S423.9,301.9,423.9,301.9z"/>
-	<path fill="none" stroke="#767879" stroke-width="4" stroke-miterlimit="10" d="M536.5,395.9c19.1-10.4,44.2-28.3,44.2-80.4h-29
-		C551.7,315.4,550.1,364.7,536.5,395.9z"/>
-	<path fill="none" stroke="#767879" stroke-width="4" stroke-miterlimit="10" d="M440.1,395.9c-18.4-10.4-44.7-28.3-44.7-80.4H424
-		C424,315.4,426.2,367.8,440.1,395.9z"/>
-	<line fill="none" stroke="#767879" stroke-width="4" stroke-miterlimit="10" x1="488.6" y1="433.8" x2="488.6" y2="483.6"/>
-	<line fill="none" stroke="#767879" stroke-width="4" stroke-miterlimit="10" x1="536.5" y1="483.6" x2="440.1" y2="483.6"/>
-	<polygon fill="none" stroke="#767879" stroke-width="4" stroke-miterlimit="10" points="488.6,320.1 498.3,340.1 520.2,343.2 
-		504.5,358.6 508.2,380.4 488.6,370.1 468.9,380.4 472.7,358.6 456.9,343.2 478.9,340.1 	"/>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="792" height="612" viewBox="0 0 792 612"><g fill="none" stroke="#000" stroke-width="24" stroke-miterlimit="10"><path d="M202.784 38.456h376.452s11.176 387.628-186.167 387.628S202.784 38.456 202.784 38.456z"/><path d="M533.943 314.913c56.175-30.586 129.994-83.231 129.994-236.459h-85.289c0-.294-4.706 144.699-44.705 236.459zm-283.514 0c-54.115-30.586-131.464-83.231-131.464-236.459h84.114c0-.294 6.469 153.816 47.35 236.459zm142.64 111.465v146.464m140.874 0H250.429m142.64-480.859l28.527 58.82 64.409 9.118-46.175 45.292 10.882 64.115-57.644-30.292-57.939 30.292 11.176-64.115-46.468-45.292 64.703-9.118 28.529-58.82z"/></g></svg>

@@ -1,272 +1,157 @@
 $green: #007e1a;
-
-@import 'opacity';
+$gray: #CCCCCC;
 
 body,
 html {
-    height: 100%;
-    width: auto !important;
-    overflow-x: hidden !important;
-
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3rem;
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Open Sans","Helvetica",Helvetica,Arial,sans-serif;
-    font-weight: 400;
+a {
+  color: $green;
+  text-decoration: none;
+
+  &:hover {
+    color: black;
+  }
 }
 
-/*Adds weight and fixes spacing for h4*/
-h4{
-    font-weight: 600;
-    letter-spacing: -.3px;
-    line-height: 1.3em;
-}
+nav {
+  background-color: $green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
 
-/*Sets the width of the page*/
-.container{
-    max-width: 960px;
-    width: 100%;
-}
+  a {
+    color: white;
+    padding-left: 3rem;
+    text-decoration: none;
+    &:hover {
+      color: $gray;
+      text-decoration: none;
+    }
+  }
 
-/*Makes the paragraph size a little bigger*/
-body p{
-	font-size: 16px;
-}
-
-h5{
-	line-height: 1.3em;
-}
-
-a{
-	color: $green;
-
-	:hover{
-		color: #000000;
-		text-decoration: none;
+	img {
+		height: 1.5rem;
 	}
 }
 
-hr{
-	border-color: #e3e3e3;
-}
-/*Nav bar is slightly transparent*/
-.navbar{
-	@include opacity(.9);
-	/*Logo in the top left corner styling, in the nav section*/
-	img{
-		height: 1.3em;
-	}
-}
-
-
-/*Sets the background image, makes it stretch to the edges*/
-.jumbotron{
-	background: url(../img/bgsmall.jpg) no-repeat center bottom fixed;
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
+.main {
+  background: url(../img/bgsmall.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
 	background-size: cover;
-}
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
-.parallax-window{
-	min-height: 400px;
-	background: transparent;
+  h3 {
+    color: white;
+    font-weight: 400;
+  }
+
+  img {
+    max-width: 90%;
+  }
 }
 
 /*Dropshadow on the svg logo*/
-#dropshadow{
+.drop-shadow {
 	-webkit-filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.5));
 }
 
-/*Spaces the logo and title in the image, adds padding*/
-.intro-message {
-    position: relative;
-    padding-top: 11em;
-    padding-bottom: 7em;
-    margin: 0 auto;
-    text-align: center;
-    color: #f8f8f8;
-
- 	li {
-	list-style-type: none;
-	}
-
-	h3 {
-	    font-weight: normal;
-	    font-size: 1.5em;
-	    text-shadow: 1px 1px 2px #3e3e3e;
-	}
-
-	/*Sizes the logo*/
-	img {
-		max-width: 30em;
-	}
-}
-
-.intro-divider {
-    width: 35%;
-    border-top: 1px solid #f8f8f8;
-    box-shadow: 1px 1px 4px #3e3e3e;
-
-    &.col-xs-12{
-    	width: 70%;
-    	border-top: 1px solid #f8f8f8;
-    	box-shadow: 1px 1px 4px #3e3e3e;
-    }
-}
-
-/*Button styling*/
-.btn {
-	background-color: $green;
-	color: #f8f8f8;
-	border: none;
-	box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-	text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 2px;
-
-	&:hover{
-	background-color: #fff;
-	color: #000000;
-	border: none;
-	}
+.quote {
+  text-align: center;
+  padding: 4rem;
+  font-weight: 100;
+  line-height: 1.6rem;
 }
 
 /*Changes size of three points area*/
-.threepoints {
-	margin: 0 auto;
-	text-align: center;
-	margin-bottom: 4em;
+.supporting {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #F0F0F0;
+  padding: 4rem 0;
 
-/*Sizes the images, controls margin*/
-	img{
-	width: 30%;
-	margin-bottom: .5em;
-	margin-right: 2em;
-	padding-left: 2em;
-	}
+  div {
+    width: 17rem;
+    margin: 0 2rem;
+  }
+
+  img {
+    height: 4em;
+  }
 }
 
-/*Adds space below a row */
-.row{
-	padding-bottom: 2em;
-	padding-top: 2em;
-}
+.contact {
+  max-width: 960px;
+  margin: 4rem auto;
+  padding: 1rem;
 
-/*Adds space above and below the hr element in this code*/
-.divider {
-	width: 100%;
-	margin-top: 4em;
-	margin-bottom: 0em;
-}
+  .smallcaps {
+  	font-variant: small-caps;
+  }
 
-/*Adds the design behind the middle quote, also sets height*/
-#quote{
-	padding: 10em 2em 12em 0;
-	margin-bottom: 2em;
-	background: #efefef url(../img/circlebg.svg) no-repeat center center;
-	background-size: cover;
-}
-
-/*contact info styles*/
-.profilepic img{
-	width: 100%;
-}
-
-.smallcaps {
-	font-variant: small-caps;
-}
-
-/*Sets spacing for consultation button*/
-#consultation {
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 3em;
-
-	/*makes there no shadow around button*/
-	&.btn{
-		box-shadow: none;
-	}
-
-	/*Deletes the bullet point from the left of the button*/
-	li{
-	list-style-type: none;
-	}
-}
-
-/*formats call to action button at bottom*/
-#calltoaction{
-	background-color: #318333;
-	padding: 4em 0 5em 0;
-	margin: 0em 0 0 0;
-	color: #fff;
-	background: url(../img/calltoactionbg.svg) repeat-x center center;
-
-	.btn{
-	background-color: #fff;
-	color: #000;
-	margin-left: -3em;
-
-		&:hover{
-		background-color: #000;
-		color: #fff;
-		}
-	}
-}
-
-/*styles the footer*/
-#footer{
-	background-color: #f8f8f8;
-	padding: 2em 0 4em 0;
-
-	a:hover{
-		color: #000;
-	}
-}
-
-#vertdivide {
-	position: relative;
-	left: 3em;
-	top: .5em;
-	border-left: 1px solid #3e3e3e;
-	height: 8em;
-}
-
-/*Makes the form say "loading" before the form pops up from google*/
-#loading {
-	position: absolute;
-	z-index: -100;
-}
-
-.broker-check{
-    background-color: #eee;
+  > div {
     display: flex;
-    justify-content: center;
-    padding: 2em;
-    margin-top: 4em;
-    object{
+    flex-wrap: wrap;
+
+    img {
+      width: 40%;
+      height: 40%;
+      margin-right: 2rem;
     }
+
+    > div {
+      min-width: 17rem;
+    }
+  }
 }
 
-@media (max-width: 767px) {
+.broker-check {
+	background-color: $green;
+  margin: 2rem 0;
+  padding: 4rem 0;
+	background: url(../img/calltoactionbg.svg) repeat-x center center;
+  display: flex;
+  justify-content: center;
+}
 
-	.threepoints{
-		text-align: left;
+.footer {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
 
-		img{
-			float: left;
-			padding-top: 1em;
-			padding-right:0;
-			padding-bottom: 3em;
-			max-width: 28%;
-		}
-	}
+  > div {
+    flex: 1;
+    padding-right: 4rem;
+    min-width: 15rem;
+  }
 
+  h5 {
+    font-weight: normal;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .supporting {
+    flex-wrap: wrap;
+
+    > div {
+      margin: 1rem 0;
+    }
+  }
+
+  .contact > div img {
+    width: 100%;
+  }
 }
